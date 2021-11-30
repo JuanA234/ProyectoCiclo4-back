@@ -5,9 +5,13 @@
   "repository": "git@github.com:JuanA234/ProyectoCiclo4-back.git",
   "author": "JuanA <juanandreslujan30@gmail.com>",
   "license": "MIT",
-  
+  "scripts": {
+    "start" : "ts-node index.ts"
+  },
   "dependencies": {
     "express": "^4.17.1",
-    "mongoose": "^6.0.14"
+    "mongoose": "^6.0.14",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2"
   }
 }
