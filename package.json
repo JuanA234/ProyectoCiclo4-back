@@ -1,0 +1,13 @@
+{
+  "name": "proyectociclo4-back",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:JuanA234/ProyectoCiclo4-back.git",
+  "author": "JuanA <juanandreslujan30@gmail.com>",
+  "license": "MIT",
+  
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.14"
+  }
+}
