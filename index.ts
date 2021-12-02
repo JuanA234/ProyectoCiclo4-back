@@ -58,8 +58,6 @@ const consultaProyectoConObjetivos1 = async () => {
      console.log('el proyecto con objetivos es: ', proyectoConObjetivos);
 }
 
-
- 
 // METODOLOGÍA ONE TO MANY #2
 const crearProyectoConObjetivos2 = async () =>{
 
@@ -110,8 +108,35 @@ const consultaProyectoConObjetivos2 = async () => {
         console.log("Proyecto encontrado", JSON.stringify(proyecto));
 };
 
-//
+// METODOLOGÍA ONE TO MANY #3
+const crearProyectoConObjetivos3 = async () =>{
 
+    const usuarioInicial = await UserModel.create({
+        apellido: 'Avelardo',
+        correo : 'lasas@ds.com',
+        identificacion: '234sw1y5',
+        nombre: 'Luis',
+        rol: Enum_Rol.administrador, 
+        estado: Enum_EstadoUsuario.autorizado,
+         })
+    
+    const proyectoCreado = await ProjectModel.create({
+        nombre: 'Proyecto Mision TIC',
+        fechaInicio: new Date("2021/12/24"),
+        fechaFinal: new Date('2022/12/24'),
+        presupuesto: 122000,
+        lider: usuarioInicial._id,
+        objetivos: [
+            {descripcion: 'Este es el objetivo general', tipo: Enum_TipoObjetivo.general},
+            {descripcion: 'Este es el objetivo especifico 1', tipo: Enum_TipoObjetivo.especifico},
+            {descripcion: 'Este es el objetivo especifico 2', tipo: Enum_TipoObjetivo.especifico},
+        ]
+    })
+}
+const consultaProyectoConObjetivos3 = async () => { 
+    const proyectoCreado = await ProjectModel.find({id: "61a79a48629babb06e0fb4ce"});
+    console.log('proyecto ', proyectoCreado);
+}
 const main = async () => {
     await conectarBD();
 
