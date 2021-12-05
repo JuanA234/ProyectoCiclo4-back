@@ -3,8 +3,8 @@ import { avanceModel } from "./avances.js";
 
 const resolverAvance = {
     Query:{
-        avances: async(parent, args) => {
-            const avances = await avanceModel.find().populate('project');
+        Avances: async(parent, args) => {
+            const avances = await avanceModel.find().populate('proyecto');
             return avances;
         },
     },

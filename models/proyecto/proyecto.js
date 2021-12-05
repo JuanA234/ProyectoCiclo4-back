@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const {Schema,  model} = mongoose;
+const { Schema, model } = mongoose;
 // interface Proyecto{
 //     nombre: string;
 //     presupuesto: number;
@@ -13,7 +13,7 @@ const {Schema,  model} = mongoose;
 // }
 
 const projectSchema = new Schema({
-    nombre:{
+    nombre: {
         type: String,
         required: true,
     },
@@ -22,17 +22,17 @@ const projectSchema = new Schema({
         type: Number,
         required: true,
     },
-    
+
     fechaInicio: {
         type: Date,
         required: true,
     },
-    
+
     fechaFinal: {
         type: Date,
         required: true,
     },
-    
+
     estado: {
         type: String,
         enum: ["INACTIVO", "ACTIVO"],
@@ -48,20 +48,21 @@ const projectSchema = new Schema({
     //     required: true,
     //     ref: UserModel,
     // },  
-    objetivos:[
+    objetivos: [
         {
-          descripcion:{
-              type: String,
-              required: true,
-          },
-          tipo:{
-              type: String,
-              enum: ["GENERAL", "ESPECIFICO"],
-              required: true, 
-          }
+            descripcion: {
+                type: String,
+                required: true,
+            },
+            tipo: {
+                type: String,
+                enum: ["GENERAL", "ESPECIFICO"],
+                required: true,
+            }
         }
     ]
-})
+}
+)
 
 const ProjectModel = model('Proyecto', projectSchema, 'Proyectos');
 

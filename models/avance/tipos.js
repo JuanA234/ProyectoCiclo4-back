@@ -13,8 +13,7 @@ const tiposAvance = gql`
  }
 
  type Query{
-     avances: [Avance]
-     filtrarAvance(_id: String!): [Avance]
+     Avances: [Avance]
  }
 
  type Mutation{
