@@ -1,42 +1,43 @@
+
 // enum Enum_Rol {
-//   ESTUDIANTE = 'ESTUDIANTE',
-//   LIDER = 'LIDER',
-//   ADMINISTRADOR = 'ADMINISTRADOR',
+//     estudiante = "Estudiante",
+//     lider = "Líder",
+//     administrador = "Administrador"
 // }
 
 // enum Enum_EstadoUsuario {
-//   PENDIENTE ='PENDIENTE',
-//   AUTORIZADO = 'AUTORIZADO',
-//   NO_AUTORIZADO = 'NO_AUTORIZADO',
+//     pendiente = "Pendiente",
+//     autorizado = "Autorizado",
+//     no_autorizado = "No autorizado"
 // }
 
 // enum Enum_EstadoProyecto {
-//   ACTIVO = 'ACTIVO',
-//   INACTIVO = 'INACTIVO',
+//     INACTIVO = "INACTIVO",
+//     ACTIVO = "ACTIVO"
 // }
 
 // enum Enum_FaseProyecto {
-//   INICIADO = 'INICIADO',
-//   DESARROLLO = 'DESARROLLO',
-//   TERMINADO = 'TERMINADO',
-//   NULO = '',
+//     INICIADO = "INICIADO",
+//     DESARROLLO = "EN_DESARROLLO",
+//     TERMINADO = "TERMINADO",
+//     NULA = '',
 // }
 
 // enum Enum_TipoObjetivo {
-//   GENERAL = 'GENERAL',
-//   ESPECIFICO = 'ESPECIFICO',
+//     GENERAL = "GENERAL",
+//     ESPECIFICO = "ESPECIFICO",
+
 // }
 
 // enum Enum_EstadoInscripcion {
-//   aceptada = 'aceptada',
-//   rechazada = 'rechazada',
+//     aceptada = 'Aceptada',
+//     rechazada = 'Rechazada',
 // }
-
 // export {
-//   Enum_Rol,
-//   Enum_EstadoUsuario,
-//   Enum_EstadoProyecto,
-//   Enum_FaseProyecto,
-//   Enum_TipoObjetivo,
-//   Enum_EstadoInscripcion,
-// };
+//     Enum_Rol,
+//     Enum_EstadoUsuario, 
+//     Enum_EstadoProyecto, 
+//     Enum_FaseProyecto, 
+//     Enum_TipoObjetivo, 
+//     Enum_EstadoInscripcion
+// }

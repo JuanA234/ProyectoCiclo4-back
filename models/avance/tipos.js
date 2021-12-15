@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { gql } from 'apollo-server-express';
 
 const tiposAvance = gql`
@@ -20,3 +21,30 @@ const tiposAvance = gql`
 `;
 
 export { tiposAvance };
+=======
+import { gql } from "apollo-server-express";
+const tiposAvance = gql`
+ 
+ scalar Date
+
+ type Avance{
+
+     _id: ID!
+     descripcion: String!
+     fecha: Date!
+     proyecto: Proyecto!
+     observaciones: [String]
+ }
+
+ type Query{
+     Avances: [Avance]
+     filtrarAvance(idProyecto: String!): [Avance]
+ }
+
+ type Mutation{
+     crearAvance(descripcion: String!, fecha: Date!, proyecto: String!) : Avance
+ }
+`
+
+export {tiposAvance};
+>>>>>>> 0a3560b6abb1518724f4507924b6c115d5835861
