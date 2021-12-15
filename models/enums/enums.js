@@ -5,7 +5,7 @@
 // }
 
 // enum Enum_EstadoUsuario {
-//   PENDIENTE = 'PENDIENTE',
+//   PENDIENTE ='PENDIENTE',
 //   AUTORIZADO = 'AUTORIZADO',
 //   NO_AUTORIZADO = 'NO_AUTORIZADO',
 // }
