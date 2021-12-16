@@ -1,4 +1,5 @@
 import mongoose from 'mongoose';
+import { UserModel } from '../usuario/usuario.js';
 
 const { Schema, model } = mongoose;
 // interface Proyecto{
@@ -43,11 +44,11 @@ const projectSchema = new Schema({
         enum: ["INICIADO", "EN_DESARROLLO", "TERMINADO", "NULO"],
         default: "NULO",
     },
-    // lider: {
-    //     type: Schema.Types.ObjectId,
-    //     required: true,
-    //     ref: UserModel,
-    // },  
+    lider: {
+        type: Schema.Types.ObjectId,
+        required: true,
+        ref: UserModel,
+    },  
     objetivos: [
         {
             descripcion: {

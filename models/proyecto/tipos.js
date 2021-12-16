@@ -26,7 +26,7 @@ const tiposProyecto = gql`
         fechaFinal: Date
         estado: Enum_EstadoProyecto
         fase: Enum_FaseProyecto
-        # lider: 
+        lider: String
     }
 
 
@@ -38,7 +38,7 @@ const tiposProyecto = gql`
         fechaFinal: Date!
         estado: Enum_EstadoProyecto!
         fase: Enum_FaseProyecto!
-        # lider:
+        lider: Usuario!
         objetivos:[Objetivo]
         avances: [Avance]
     }
@@ -55,7 +55,7 @@ const tiposProyecto = gql`
         fechaFinal: Date!
         estado: Enum_EstadoProyecto!
         fase: Enum_FaseProyecto!
-        # lider:
+        lider: String!
         objetivos:[crearObjetivo]
         ): Proyecto
 
