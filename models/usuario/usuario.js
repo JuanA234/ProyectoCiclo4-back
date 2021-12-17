@@ -69,17 +69,17 @@ userSchema.virtual('proyectosLiderados', {
   foreignField: 'lider',
 });
 
-// userSchema.virtual('avancesCreados', {
-//   ref: 'Avance',
-//   localField: '_id',
-//   foreignField: 'creadoPor',
-// });
+userSchema.virtual('avancesCreados', {
+  ref: 'Avance',
+  localField: '_id',
+  foreignField: 'creadoPor',
+});
 
-// userSchema.virtual('inscripciones', {
-//   ref: 'Inscripcion',
-//   localField: '_id',
-//   foreignField: 'estudiante',
-// });
+userSchema.virtual('inscripciones', {
+  ref: 'Inscripcion',
+  localField: '_id',
+  foreignField: 'estudiante',
+});
 
 const UserModel = model('User', userSchema);
 

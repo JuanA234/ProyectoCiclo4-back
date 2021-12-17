@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import { gql } from 'apollo-server-express';
 import { tiposEnums } from '../models/enums/tipos.js';
 import { tiposUsuario } from '../models/usuario/tipos.js';
@@ -20,20 +20,4 @@ export const tipos = [
   tiposInscripcion,
   tiposAutenticacion,
 ];
-=======
-import {gql} from 'apollo-server-express';
-import { tiposAvance } from '../models/avance/tipos.js';
-import { tiposEnums } from '../models/enums/tipos.js';
-import { tiposProyecto } from '../models/proyecto/tipos.js';
-import { tiposUsuario } from '../models/usuario/tipos.js';
 
-const tiposGlobales = gql`
-    scalar Date
-`
-
-<<<<<<< HEAD
-export const tipos = [tiposGlobales, tiposProyecto, tiposAvance, tiposEnums];
->>>>>>> 0a3560b6abb1518724f4507924b6c115d5835861
-=======
-export const tipos = [tiposGlobales, tiposProyecto, tiposAvance, tiposEnums, tiposUsuario];
->>>>>>> 4bb29b39b5ee2a7f858dbf84aa80a7ac9a7f5bb9
