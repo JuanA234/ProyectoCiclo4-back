@@ -9,8 +9,8 @@ const tiposUsuario = gql`
     correo: String!
     rol: Enum_Rol!
     estado: Enum_EstadoUsuario
-    # foto: String
-    # inscripciones: [Inscripcion]
+    foto: String
+    inscripciones: [Inscripcion]
     avancesCreados: [Avance]
     proyectosLiderados: [Proyecto]
   }

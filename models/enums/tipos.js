@@ -31,6 +31,13 @@ enum Enum_EstadoUsuario {
 
  }
 
+
+ enum Enum_EstadoInscripcion {
+    ACEPTADO
+    RECHAZADO
+    PENDIENTE
+  }
+
  
 `
 

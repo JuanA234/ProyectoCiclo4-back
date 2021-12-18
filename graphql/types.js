@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> f1efa3f6788df131dd2e2f60e53a5c5a195e844a
 import { gql } from 'apollo-server-express';
 import { tiposEnums } from '../models/enums/tipos.js';
 import { tiposUsuario } from '../models/usuario/tipos.js';
